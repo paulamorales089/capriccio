@@ -24,29 +24,38 @@ ul {
 .flex {
   display: flex;   
 }
-
+/*clase utilitaria para acomodar horizontalmente todo en el centro*/
 .aling-items-center {
   align-items: center;
 }
-
+/*acomodacion de todo el menu*/
 .nav {
   justify-content: space-around;
+  position: fixed;
+  width: 100%;
 }
-
+/*estilo de los nav del menu*/
 .nav a {
   text-decoration: none;
   font-family: "Playfair Display", regular;
   color: white;
 }
-
+/*margen entre cada uno de los elementos del menu*/
 .menu__item, .menu__icon {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
+/*cambiar tamaño image ICONOS*/
 .menu__icon img {
   height: 25px;   
 }
-
+/*espacio contenedor iconos respecto al menu2 y al borde derecho */
+.nav__icons {
+  padding-right: 30px;
+  padding-left: 10px;
+  
+}
+/*cambiar tamaño image LOGO*/
 .nav__logo img {
-  height: 95px;
+  height: 90px;
 }
