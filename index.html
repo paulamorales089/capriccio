@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles.css">
     
 </head>
@@ -47,7 +51,7 @@
         
             </ul>
 
-            <ul class="nav__icons flex">
+            <ul class="nav__icon flex">
                 <li class="menu__icon">
                     <button>
                         <img src="/images/search_Icon.png" alt="icono buscar">             
@@ -74,14 +78,17 @@
     </header>
     
     <section class="banner">
-        <img src="/images/imgCabezote.png" alt="img header" width="100%">
+        <img class="banner__img" src="/images/imgCabezote.png" alt="img header" width="100%">
+
+        <!--<div class="fondo__degrade"></div>-->
     
-        <div>
-            <h3>DID YOU KNOW?</h3>
+        <div class="fondo__degrade">
+
+            <h3 class="text__details">DID YOU KNOW?</h3>
     
-            <h1>Divenely Delicious</h1>
+            <h1 class="text__details">Divenely Delicious</h1>
     
-            <p>The scientific name of the cocoa tree translated from the Latin as Food of the Gods. Our pastry chef reflected the name of chocolate in its taste.                    
+            <p class="text__details parrafo">The scientific name of the cocoa tree translated from the Latin as Food of the Gods. Our pastry chef reflected the name of chocolate in its taste.                    
             </p>
     
         </div>
