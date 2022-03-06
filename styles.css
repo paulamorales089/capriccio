@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #150b01;
+}
+
+header {
+  padding: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;   
+}
+
+.aling-items-center {
+  align-items: center;
+}
+
+.nav {
+  justify-content: space-around;
+}
+
+.nav a {
+  text-decoration: none;
+  font-family: "Playfair Display", regular;
+  color: white;
+}
+
+.menu__item, .menu__icon {
+  margin: 0 15px;
+}
+
+.menu__icon img {
+  height: 25px;   
+}
+
+.nav__logo img {
+  height: 95px;
+}

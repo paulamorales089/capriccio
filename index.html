@@ -5,84 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    
 </head>
 <body>
     <header>
         
-        <nav>
-            <ul>
-                <li>
+        <nav class="nav flex">
+            <div class="flex aling-items-center ">
+            <ul class="menu flex aling-items-center ">
+                <li class="menu__item">
                     <a href="#">About Us</a>
                 </li>
 
-                <li>
+                <li class="menu__item">
                     <a href="#">New Collection</a>
                 </li>
 
-                <li>
+                <li class="menu__item">
                     <a href="#">Products</a>
                 </li>
             </ul>
-            
-            <div>
+        </div>
+
+            <div class="nav__logo flex aling-items-center " >
                 <a href="#">
-                    <img src="images/logoC&D.png" alt="CyD">
+                    <img src="images/logo.png" alt="CyD">
                 </a>
             </div>
-            
-            <ul>
-                <li>
+
+            <div class="flex aling-items-center ">
+            <ul class="menu2 flex">
+                <li class="menu__item">
                     <a href="#">Gift Boxes</a>
                 </li>
 
-                <li>
+                <li class="menu__item">
                     <a href="#">Contac Us</a>
                 </li>
-
-                <li>
-                    <a href="">Contac Us</a>
-                </li>
+        
             </ul>
 
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="/images/search_Icon.png" alt="search_Icon">                      
-                    </a>
+            <ul class="nav__icons flex">
+                <li class="menu__icon">
+                    <button>
+                        <img src="/images/search_Icon.png" alt="icono buscar">             
+                    </button>                   
                 </li>
 
-                <li>
+                <li class="menu__icon">
                     <a href="">
-                        <img src="/images/heart_Icon.png" alt="heart_Icon">                      
+                        <img src="/images/heart_Icon.png" alt="icono corazon">                      
                     </a>
 
                 </li>
 
-                <li>
+                <li class="menu__icon">
                     <a href="">
-                        <img src="/images/shop_Icon.png" alt="buscar_Icon">                      
+                        <img src="/images/shop_Icon.png" alt="icono carrito de compras">                      
                     </a>
                 </li>
             </ul>
+        </div>
 
-            <img src="/images/imgCabezote.png" alt="img header" width="100%">
-
-            <div>
-                <h3>DID YOU KNOW?</h3>
-
-                <h1>Divenely Delicious</h1>
-
-                <p>The scientific name of the cocoa tree translated from the Latin as Food of the Gods. Our pastry chef reflected the name of chocolate in its taste.                    
-                </p>
-
-            </div>
         </nav>
 
+    </header>
+    
+    <section class="banner">
+        <img src="/images/imgCabezote.png" alt="img header" width="100%">
+    
+        <div>
+            <h3>DID YOU KNOW?</h3>
+    
+            <h1>Divenely Delicious</h1>
+    
+            <p>The scientific name of the cocoa tree translated from the Latin as Food of the Gods. Our pastry chef reflected the name of chocolate in its taste.                    
+            </p>
+    
+        </div>
+    
         <div>
             <h4>Plan your next event with us</h4>
             <a href="">LEARN MORE</a>
         </div>
-    </header>
+
+    </section>
 
     <section>
         <h2>CAPRICCIO & DELIZIA</h2>
@@ -108,6 +117,18 @@
 
         <img src="/images/cupcake_section1.jpg" alt="cupcake Section1">    
         <img src="/images/chocolate_piece.jpg" alt="chocolate piece Section1">
+    </section>
+
+    <section>
+        <h3>QUICK LOOK FOR</h3>
+        <h1>Some of our products</h1>
+      
+        <button>Todo</button>
+        <button>Brownies</button>
+        <button>Bombones</button>      
+
+        <a href="#">SEE MORE</a>
+
     </section>
     
 </body>
