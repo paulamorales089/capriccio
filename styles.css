@@ -9,9 +9,9 @@ body {
   background-color: #150b01;
 }
 
-header {
-  /*padding: 50px;*/
-}
+/*header {
+  padding: 50px;
+}*/
 
 button {
   background-color: transparent;
@@ -62,9 +62,9 @@ ul {
   height: 20px;   
 }
 /*espacio contenedor iconos respecto al menu2 y al borde derecho */
-.nav__icon {
-  /*padding-right: 100px;    */
-}
+/*.nav__icon {
+  padding-right: 100px;   
+} */
                                               
 /*cambiar tamaño image LOGO*/
 .nav__logo img {  
@@ -88,7 +88,7 @@ ul {
   justify-content: center;
   position: absolute;
   width: 88%;
-  top: 22%;
+  top: 25%;
   left: 10px;
   margin: 0 5%;
   height: 510px;    
@@ -98,12 +98,11 @@ ul {
   background: linear-gradient(90deg, rgba(21,11,1,1) 10%, rgba(21,11,1,0.8743872549019608) 45%, rgba(21,11,1,0.16010154061624648) 100%);
 }
 
-.text__details {
-  
+.text__details {  
   margin-left: 10%;
 }
 
-h3 {
+.estilo__h3 {
   font-size: .75em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -124,5 +123,44 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #FFF;
+}
+
+.cuadrito{
+  position: absolute;
+  right: 15%;
+  bottom: -55px;
+}
+
+.absolute--cuadrito {
+  position: absolute;
+  right: 15%;
+  bottom: 30%;
+}
+
+.absolute--cuadrito h4{
+  text-align: right;
+  width: 80%;
+  padding-bottom: 10%;
+  margin-left: 20%;
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #3a3e49;
+}
+.absolute--cuadrito a{
+  text-align: right;
+  margin-left: 56%;
+  margin-top: 85px;
+  padding: 10px 15px;
+  outline: 2px solid #5F2D12;
+  color: #5F2D12;
+
+  text-decoration: none;
+  font-size: .75em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  
+  
+
 }
 
