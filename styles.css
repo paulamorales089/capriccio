@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -102,7 +105,7 @@ ul {
   margin-left: 10%;
 }
 
-.estilo__h3 {
+h3 {
   font-size: .75em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -116,9 +119,9 @@ h1 {
   color: #FFF;
 }
 
-.parrafo {
+p {
   padding-top: 15px;
-  width: 45%;
+  width: 40%;
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -159,8 +162,41 @@ h1 {
   font-size: .75em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  
-  
-
 }
+
+.about__us {
+  margin: 8% 0%;
+}
+.about__us h2{
+  text-align: center;
+  font-size: 2.18em;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 200;
+  color: #EBD398;
+  
+}
+
+.capriccio__thing {
+  position: relative;
+}
+
+.moronitas {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 55%;  
+}
+
+.fondo__section2 {
+  position: relative;  
+}
+
+.position--absolute {
+  position: absolute;
+}
+
+
+
+
+
 
