@@ -64,12 +64,7 @@ ul {
 .menu__icon img {
   height: 20px;   
 }
-/*espacio contenedor iconos respecto al menu2 y al borde derecho */
-/*.nav__icon {
-  padding-right: 100px;   
-} */
-                                              
-/*cambiar tamaño image LOGO*/
+
 .nav__logo img {  
   height: 85px;
 }
@@ -79,6 +74,7 @@ ul {
 
 .banner__img {
   object-fit: cover;
+  top: 20%;
 }
 
 .banner {
@@ -101,9 +97,11 @@ ul {
   background: linear-gradient(90deg, rgba(21,11,1,1) 10%, rgba(21,11,1,0.8743872549019608) 45%, rgba(21,11,1,0.16010154061624648) 100%);
 }
 
-.text__details {  
+.text--details{
   margin-left: 10%;
 }
+
+
 
 h3 {
   font-size: .75em;
@@ -143,7 +141,7 @@ p {
 .absolute--cuadrito h4{
   text-align: right;
   width: 80%;
-  padding-bottom: 10%;
+  padding-bottom: 25px;
   margin-left: 20%;
   font-size: 1.5em;
   font-family: 'Open Sans', sans-serif;
@@ -164,20 +162,12 @@ p {
   font-weight: 700;
 }
 
-.about__us {
-  margin: 8% 0%;
-}
-.about__us h2{
-  text-align: center;
-  font-size: 2.18em;
-  font-family: 'Abril Fatface', cursive;
-  font-weight: 200;
-  color: #EBD398;
-  
+.position--relative {
+  position: relative;
 }
 
-.capriccio__thing {
-  position: relative;
+.position--absolute {
+  position: absolute;  
 }
 
 .moronitas {
@@ -187,13 +177,81 @@ p {
   top: 55%;  
 }
 
-.fondo__section2 {
+/*.fondo__section1 {
   position: relative;  
+}*/
+
+/*espacio entre el banner y el titulo de capriccio y delizia*/
+.about__us {
+  margin: 10% 0%;
+  margin-bottom: 0%;
+}
+.about__us h1{
+  margin-left: 14.2%;
 }
 
-.position--absolute {
-  position: absolute;
+/*estilo titulo de capriccio y delizia*/
+.about__us h2{
+  text-align: center;
+  font-size: 2.18em;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 200;
+  color: #EBD398;
+  
 }
+/*espacio entre el titulo de capriccio y delizia y el titulo de about us*/
+.texto__about__us {
+  top: 30%;
+  left: 14%;
+}
+
+.about__us p {
+  margin-left: 36%;
+  width: 42%;
+}
+
+.about__us h1 {
+  font-size: 5.2em;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  color: #FFF;
+}
+
+.section2 p{
+  padding-bottom: 32px;
+    width: 46.9%;
+}
+
+.section2 a{
+  padding: 10px 15px;
+  outline: 2px solid #EBD398;
+  color:#EBD398;
+  text-decoration: none;
+  font-size: .75em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.section2__img{
+  opacity: 80%;
+}
+
+.section2 div{
+  top: 90px;
+  margin-left: 14.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
