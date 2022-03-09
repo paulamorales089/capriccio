@@ -42,7 +42,7 @@ ul {
 /*estilo de los nav del menu*/
 .nav a {
   text-decoration: none;
-  font-size: .90em;
+  font-size: 1em;
   font-family: 'Playfair Display', serif;
   color: #dfdfdf;
 }
@@ -240,39 +240,55 @@ p {
   top: 150px;
   margin-left: 14.5%;
 }
-
-.cupcake__torta{
-  transform: scale(0.8);
-}
-
-.sectio2__cupcake{
-  top: 22%;
-  right: 25%;
+.section2 img{
   border-radius: 60px 0 0 0;
 }
-
-.section2__torta{
-  top: 5%;
-  right: 10%;
-  border-radius: 60px 0 0 0;
-}
-
-/*.section2__linea1{
+.section2__linea1{
   position: absolute;
   width: 245px;
   height: 326px;
   border-radius: 60px 0 0 0;
   outline: 1px solid #EBD398;
+  top: 23% !important;
+  right: 25%;
+}
+
+.cupcake__torta{
+  transform: scale(0.8) translate(-70px, -89px);
+}
+
+/*.sectio2__cupcake{
   top: 22%;
   right: 25%;
+  border-radius: 60px 0 0 0;
+}*/
+
+.section2__linea2{
+  position: absolute;
+  width: 245px;
+  height: 326px;
+  border-radius: 60px 0 0 0;
+  outline: 1px solid #EBD398;
+  top: 8% !important;
+  right: 10%;
+}
+/*.section2__torta{
+  top: 5%;
+  right: 10%;
+  border-radius: 60px 0 0 0;
 }*/
 
 .section3{
   bottom: 650px;
 }
-.section3 div{  
+.section3 img{
+  top: -80px;
+  border-radius: 60px 0 60px 0px;
+}
+.section3--div{  
   right: 10%;  
-  margin: 8%;
+  margin: 8% 5%;
+  margin-left: 12%;
   border-radius: 60px 0 60px 0;
   outline: 1px solid #EBD398;
   padding: 120px 50px 120px;
@@ -283,8 +299,21 @@ p {
 }
 
 .section3__pastel{
-  transform: scale(0.75);
+  transform: scale(0.8);
 }
+.section3--div2{
+  margin: 0 30%;
+  justify-content: space-around;
+  
+}
+.section3 button{
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Playfair Display', serif;
+  color: #dfdfdf;
+}
+
+
 
 
 
