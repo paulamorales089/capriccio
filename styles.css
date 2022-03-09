@@ -97,12 +97,6 @@ ul {
   background: linear-gradient(90deg, rgba(21,11,1,1) 10%, rgba(21,11,1,0.8743872549019608) 45%, rgba(21,11,1,0.16010154061624648) 100%);
 }
 
-.text--details{
-  margin-left: 10%;
-}
-
-
-
 h3 {
   font-size: .75em;
   font-family: 'Open Sans', sans-serif;
@@ -111,7 +105,7 @@ h3 {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.8em;
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   color: #FFF;
@@ -126,6 +120,17 @@ p {
   color: #FFF;
 }
 
+.position--relative {
+  position: relative;
+}
+
+.position--absolute {
+  position: absolute;  
+}
+
+.text--details{
+  margin-left: 10%;
+}
 .cuadrito{
   position: absolute;
   right: 15%;
@@ -162,14 +167,6 @@ p {
   font-weight: 700;
 }
 
-.position--relative {
-  position: relative;
-}
-
-.position--absolute {
-  position: absolute;  
-}
-
 .moronitas {
   position: absolute;
   transform: translate(-50%,-50%);
@@ -184,7 +181,7 @@ p {
 /*espacio entre el banner y el titulo de capriccio y delizia*/
 .about__us {
   margin: 10% 0%;
-  margin-bottom: 0%;
+  margin-bottom: -3%;
 }
 .about__us h1{
   margin-left: 14.2%;
@@ -217,9 +214,12 @@ p {
   color: #FFF;
 }
 
+.section2{
+  bottom: 0px;
+}
 .section2 p{
   padding-bottom: 32px;
-    width: 46.9%;
+  width: 46.9%;
 }
 
 .section2 a{
@@ -237,11 +237,54 @@ p {
 }
 
 .section2 div{
-  top: 90px;
+  top: 150px;
   margin-left: 14.5%;
 }
 
+.cupcake__torta{
+  transform: scale(0.8);
+}
 
+.sectio2__cupcake{
+  top: 22%;
+  right: 25%;
+  border-radius: 60px 0 0 0;
+}
+
+.section2__torta{
+  top: 5%;
+  right: 10%;
+  border-radius: 60px 0 0 0;
+}
+
+/*.section2__linea1{
+  position: absolute;
+  width: 245px;
+  height: 326px;
+  border-radius: 60px 0 0 0;
+  outline: 1px solid #EBD398;
+  top: 22%;
+  right: 25%;
+}*/
+
+.section3{
+  bottom: 650px;
+}
+.section3 div{  
+  right: 10%;  
+  margin: 8%;
+  border-radius: 60px 0 60px 0;
+  outline: 1px solid #EBD398;
+  padding: 120px 50px 120px;
+}
+
+.section3__textDetails{
+  margin-left: 40%; 
+}
+
+.section3__pastel{
+  transform: scale(0.75);
+}
 
 
 
