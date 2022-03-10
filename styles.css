@@ -221,7 +221,6 @@ p {
   padding-bottom: 32px;
   width: 46.9%;
 }
-
 .section2 a{
   padding: 10px 15px;
   outline: 2px solid #EBD398;
@@ -231,11 +230,9 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
-
 .section2__img{
   opacity: 80%;
 }
-
 .section2 div{
   top: 150px;
   margin-left: 14.5%;
@@ -256,13 +253,6 @@ p {
 .cupcake__torta{
   transform: scale(0.8) translate(-70px, -89px);
 }
-
-/*.sectio2__cupcake{
-  top: 22%;
-  right: 25%;
-  border-radius: 60px 0 0 0;
-}*/
-
 .section2__linea2{
   position: absolute;
   width: 245px;
@@ -272,12 +262,6 @@ p {
   top: 8% !important;
   right: 10%;
 }
-/*.section2__torta{
-  top: 5%;
-  right: 10%;
-  border-radius: 60px 0 0 0;
-}*/
-
 .section3{
   bottom: 650px;
 }
@@ -293,18 +277,15 @@ p {
   outline: 1px solid #EBD398;
   padding: 120px 50px 120px;
 }
-
 .section3__textDetails{
   margin-left: 40%; 
 }
-
 .section3__pastel{
   transform: scale(0.8);
 }
 .section3--div2{
   margin: 0 30%;
-  justify-content: space-around;
-  
+  justify-content: space-around;  
 }
 .section3 button{
   text-decoration: none;
@@ -312,7 +293,16 @@ p {
   font-family: 'Playfair Display', serif;
   color: #dfdfdf;
 }
-
+.div2--button{
+  margin: 0 10px;
+  padding: 5px 10px;
+}
+.div2--button:hover{
+  background-color: #dfdfdf1a;
+  outline: 1px solid #EBD398;
+  border-radius: 20px;  
+  color: #DF9146;
+}
 .section3 a{
   padding: 10px 15px;
   outline: 2px solid #EBD398;
@@ -321,21 +311,24 @@ p {
   font-size: .75em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  
+}
+.section3__seeMore{
+  margin-top: 5%;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 }
 .section3__galery{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 450px;
-  padding: 10%; 
-  grid-gap: 2%;
-  
-  /*grid-auto-rows: minmax(100px, auto);*/
+  grid-auto-rows: 400px;
+  padding: 5% 15%; 
+  grid-gap: 20px;
 }
-
 .galery__img{
   width: 100%;
-  height: 100%;
-  
+  height: 100%;  
   object-fit: cover;
 }
 .galery__item:nth-child(2){
@@ -347,6 +340,20 @@ p {
 .galery__item:nth-child(6){
   grid-column-start: span 2;
 }
+.section3--esquina1{
+  border-radius: 100px 0 0 0;
+}
+
+.section3--esquina2{
+  border-radius: 0 100px 0 0;
+}
+.section3--esquina3{
+  border-radius: 0 0 100px 0;
+}
+.section3--esquina4{
+  border-radius: 0 0 0 100px;
+}
+
 
 
 
