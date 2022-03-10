@@ -12,10 +12,6 @@ body {
   background-color: #150b01;
 }
 
-/*header {
-  padding: 50px;
-}*/
-
 button {
   background-color: transparent;
   border: none;
@@ -46,10 +42,17 @@ ul {
   font-family: 'Playfair Display', serif;
   color: #dfdfdf;
 }
+.nav__logo {
+  padding-top: 50px;
+}
 /*margen entre cada uno de los elementos del menu*/
-.menu__item, .menu__icon {
+.menu__item {
   margin: 0 10px;
   padding: 5px 10px;
+}
+ .menu__icon{
+  margin: 0 10px;
+  padding: 5px -5px;
 }
 /*sombreado elementos menu*/
 .menu__item:hover{
@@ -65,22 +68,13 @@ ul {
   height: 20px;   
 }
 
-.nav__logo img {  
-  height: 85px;
-}
-.nav__logo {
-  padding-top: 50px;
-}
-
+/*.banner {
+  position: relative;  
+}*/
 .banner__img {
   object-fit: cover;
   top: 20%;
 }
-
-.banner {
-  position: relative;  
-}
-
 .fondo__degrade {
   display: flex;
   flex-direction: column;
@@ -96,21 +90,18 @@ ul {
   outline: 1px solid #EBD398;
   background: linear-gradient(90deg, rgba(21,11,1,1) 10%, rgba(21,11,1,0.8743872549019608) 45%, rgba(21,11,1,0.16010154061624648) 100%);
 }
-
 h3 {
   font-size: .75em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: #EBD398;
 }
-
 h1 {
   font-size: 3.8em;
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   color: #FFF;
 }
-
 p {
   padding-top: 15px;
   width: 40%;
@@ -119,30 +110,26 @@ p {
   font-weight: 300;
   color: #FFF;
 }
-
 .position--relative {
   position: relative;
 }
-
 .position--absolute {
   position: absolute;  
 }
-
 .text--details{
   margin-left: 10%;
 }
+
 .cuadrito{
   position: absolute;
   right: 15%;
   bottom: -55px;
 }
-
 .absolute--cuadrito {
   position: absolute;
   right: 15%;
   bottom: 30%;
 }
-
 .absolute--cuadrito h4{
   text-align: right;
   width: 80%;
@@ -167,52 +154,44 @@ p {
   font-weight: 700;
 }
 
-.moronitas {
-  position: absolute;
-  transform: translate(-50%,-50%);
-  left: 50%;
-  top: 55%;  
-}
-
-/*.fondo__section1 {
-  position: relative;  
-}*/
-
 /*espacio entre el banner y el titulo de capriccio y delizia*/
 .about__us {
   margin: 10% 0%;
   margin-bottom: -3%;
 }
-.about__us h1{
-  margin-left: 14.2%;
+.moronitas {
+  /*position: absolute;*/
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 55%;  
 }
-
+/*.about__us h1{
+  margin-left: 14.2%;
+}*/
+.about__us h1 {
+  margin-left: 14.2%;
+  font-size: 5.2em;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  color: #FFF;
+}
 /*estilo titulo de capriccio y delizia*/
 .about__us h2{
   text-align: center;
   font-size: 2.18em;
   font-family: 'Abril Fatface', cursive;
   font-weight: 200;
-  color: #EBD398;
-  
+  color: #EBD398;  
 }
-/*espacio entre el titulo de capriccio y delizia y el titulo de about us*/
+.about__us p {
+  margin-left: 36%;
+  width: 42%;
+}
 .texto__about__us {
   top: 30%;
   left: 14%;
 }
 
-.about__us p {
-  margin-left: 36%;
-  width: 42%;
-}
-
-.about__us h1 {
-  font-size: 5.2em;
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  color: #FFF;
-}
 
 .section2{
   bottom: 0px;
@@ -249,7 +228,6 @@ p {
   top: 23% !important;
   right: 25%;
 }
-
 .cupcake__torta{
   transform: scale(0.8) translate(-70px, -89px);
 }
@@ -284,7 +262,7 @@ p {
   transform: scale(0.8);
 }
 .section3--div2{
-  margin: 0 30%;
+  margin: 0 35%;
   justify-content: space-around;  
 }
 .section3 button{
@@ -343,7 +321,6 @@ p {
 .section3--esquina1{
   border-radius: 100px 0 0 0;
 }
-
 .section3--esquina2{
   border-radius: 0 100px 0 0;
 }
