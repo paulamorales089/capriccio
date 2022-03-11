@@ -392,11 +392,26 @@ p {
 .section4__newsLetter{
   position: absolute;
   top: 30%;
-  height: 300px; 
-  width: 28%;   
+  height: 325px; 
+  width: 30%;   
   margin: 0 35%;
-  padding: 45px 10px 60px 40px;    
+  padding: 40px 10px 60px 40px;    
   outline: 1px solid #EBD398;  
+}
+.section4__email{
+  margin-top: 20px;
+  padding: 10px 40px 10px 10px;
+}
+.email__button{
+  padding: 10px 15px;
+  outline: 2px solid #EBD398;
+  color:#EBD398;
+  text-decoration: none;
+  font-size: .75em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
 }
 
 
