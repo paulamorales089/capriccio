@@ -374,7 +374,10 @@ p {
     font-size: 2.8em;
   }
   /*HEADER START*/
-  
+.nav__logo{
+  padding-top: 38px;
+  transform: scale(0.8);
+}
   /*HEADER END*/
 /*BANNER START*/
   .fondo__degrade {
@@ -458,7 +461,6 @@ p {
 .section3__pastel{
   transform: scale(0.5);
 }
-
   /*SECTION 3 END*/
 
   /*GALLERY START*/
