@@ -432,10 +432,10 @@ p {
 }
 
 .footer__logo {
-  font-family: 'Pacifico', cursive;
-  font-weight: 400;
-  text-transform: lowercase;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;  
   font-size: 1.5rem;
+  color:#EBD398;
 }
 
 .footer__addr h2 {
