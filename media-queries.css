@@ -131,3 +131,8 @@
   }
     /*SECTION 4 END*/
   }
+  @media (max-width:1180px){
+.section2__img{
+    width: 100%;
+}
+  }
