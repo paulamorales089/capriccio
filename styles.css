@@ -78,10 +78,10 @@ ul {
   justify-content: center;
   position: absolute;
   width: 88%;
-  top: 25%;
+  top: 27%;
   left: 10px;
   margin: 0 5%;
-  height: 510px;    
+  height: 430px;    
   display: flex;
   border-radius: 120px 0 0 0;
   outline: 1px solid #EBD398;
@@ -152,7 +152,7 @@ p {
 }
 
 /*espacio entre el banner y el titulo de capriccio y delizia*/
-.about__us {
+.section1_about__us  {
   margin: 10% 0%;
   margin-bottom: -3%;
 }
@@ -165,7 +165,7 @@ p {
 /*.about__us h1{
   margin-left: 14.2%;
 }*/
-.about__us h1 {
+.section1_about__us  h1 {
   margin-left: 14.2%;
   font-size: 5.2em;
   font-family: 'Playfair Display', serif;
@@ -173,27 +173,27 @@ p {
   color: #FFF;
 }
 /*estilo titulo de capriccio y delizia*/
-.about__us h2{
+.section1_about__us  h2{
   text-align: center;
   font-size: 2.18em;
   font-family: 'Abril Fatface', cursive;
   font-weight: 200;
   color: #EBD398;  
 }
-.about__us p {
+.section1_about__us  p {
   margin-left: 36%;
   width: 42%;
 }
-.texto__about__us {
-  top: 30%;
-  left: 14%;
+.text__about__us {
+  top: 37%;
+  left: 13%;
 }
 
 
-.section2{
+.section2_Exquisite_hapiness{
   bottom: 0px;
 }
-.section2 a{
+.section2_Exquisite_hapiness a{
   padding: 10px 15px;
   outline: 2px solid #EBD398;
   color:#EBD398;
@@ -202,7 +202,7 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
-.section2 p{
+.section2_Exquisite_hapiness p{
   padding-bottom: 35px;
   width: 44%;
 }
@@ -210,11 +210,11 @@ p {
   opacity: 80%;
   width: 100%gti;
 }
-.section2 div{
+.section2_Exquisite_hapiness div{
   top: 150px;
   margin-left: 14.5%;
 }
-.section2 img{
+.section2_Exquisite_hapiness img{
   border-radius: 60px 0 0 0;
 }
 .section2__linea1{
