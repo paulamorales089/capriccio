@@ -94,7 +94,7 @@ h2 {
   color: #EBD398;
 }
 h1 {
-  font-size: 3.6em;
+  font-size: 3em;
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   color: #FFF;
@@ -117,17 +117,17 @@ p {
   margin-left: 10%;
 }
 
-.cuadrito{
+.next__event__square{
   position: absolute;
   right: 15%;
   bottom: -55px;
 }
-.absolute--cuadrito {
+.absolute--square {
   position: absolute;
   right: 15%;
   bottom: 30%;
 }
-.absolute--cuadrito h4{
+.absolute--square h4{
   text-align: right;
   width: 80%;
   padding-bottom: 25px;
@@ -137,7 +137,7 @@ p {
   font-weight: 700;
   color: #3a3e49;
 }
-.absolute--cuadrito a{
+.absolute--square a{
   text-align: right;
   margin-left: 56%;
   margin-top: 85px;
@@ -152,7 +152,7 @@ p {
 }
 
 /*espacio entre el banner y el titulo de capriccio y delizia*/
-.section1_about__us  {
+.section1__about__us  {
   margin: 10% 0%;
   margin-bottom: -3%;
 }
@@ -165,7 +165,7 @@ p {
 /*.about__us h1{
   margin-left: 14.2%;
 }*/
-.section1_about__us  h1 {
+.section1__about__us  h1 {
   margin-left: 14.2%;
   font-size: 5.2em;
   font-family: 'Playfair Display', serif;
@@ -173,14 +173,14 @@ p {
   color: #FFF;
 }
 /*estilo titulo de capriccio y delizia*/
-.section1_about__us  h2{
+.section1__about__us  h2{
   text-align: center;
   font-size: 2.18em;
   font-family: 'Abril Fatface', cursive;
   font-weight: 200;
   color: #EBD398;  
 }
-.section1_about__us  p {
+.section1__about__us  p {
   margin-left: 36%;
   width: 42%;
 }
@@ -190,10 +190,10 @@ p {
 }
 
 
-.section2_Exquisite_hapiness{
+.section2__Exquisite__hapiness{
   bottom: 0px;
 }
-.section2_Exquisite_hapiness a{
+.section2__Exquisite__hapiness a{
   padding: 10px 15px;
   outline: 2px solid #EBD398;
   color:#EBD398;
@@ -202,7 +202,7 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
-.section2_Exquisite_hapiness p{
+.section2__Exquisite__hapiness p{
   padding-bottom: 35px;
   width: 44%;
 }
@@ -210,11 +210,11 @@ p {
   opacity: 80%;
   width: 100%gti;
 }
-.section2_Exquisite_hapiness div{
+.section2__Exquisite__hapiness div{
   top: 150px;
   margin-left: 14.5%;
 }
-.section2_Exquisite_hapiness img{
+.section2__Exquisite__hapiness img{
   border-radius: 60px 0 0 0;
 }
 .section2__linea1{
@@ -239,48 +239,49 @@ p {
   right: 10%;
 }
 
-.section3{
+.section3__some__products{
   bottom: 650px;
 }
-.estilo--img{
-  top: -80px;
+.cakeTitle__img--style{
+  margin: 0 25px;
+  top: -115px;
   border-radius: 60px 0 60px 0px;
 }
-.section3--div{  
+.section3--div--title{  
   right: 10%;  
-  margin: 8% 5%;
+  margin: 5% 8%;
   margin-left: 12%;
   border-radius: 60px 0 60px 0;
   outline: 1px solid #EBD398;
-  padding: 100px 50px 100px;
+  padding: 80px 50px 100px;
 }
-.section3__textDetails{
+.section3__textDetails--title{
   margin-left: 40%; 
 }
-.section3__pastel{
-  transform: scale(0.8);
+.section3__img__cakeTitle{
+  transform: scale(0.72);
 }
-.section3--div2{
+.section3--div2--obtionsProducts{
   margin: 0 35%;
   justify-content: space-around;  
 }
-.section3 button{
+.section3__some__products button{
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.1em;
   font-family: 'Playfair Display', serif;
   color: #dfdfdf;
 }
-.div2--button{
+.section3__div2--button{
   margin: 0 10px;
   padding: 5px 10px;
 }
-.div2--button:hover{
+.section3__div2--button:hover{
   background-color: #dfdfdf1a;
   outline: 1px solid #EBD398;
   border-radius: 20px;  
   color: #DF9146;
 }
-.section3 a{
+.section3__some__products a{
   padding: 10px 15px;
   outline: 2px solid #EBD398;
   color:#EBD398;
@@ -371,27 +372,27 @@ p {
 
 
 
-.section4 {  
+.section4__news__letter {  
   margin-top: -590px;
 }
-.section4 img{
+.section4__news__letter img{
   width: 100%;  
 }
-.section4 h1 {
+.section4__news__letter h1 {
   font-size: 1.8em;  
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   color: #FFF;
   width: 80%;
 }
-.section4 h2 {
+.section4__news__letter h2 {
   width: 100%;
 }
-.section4 p {
+.section4__news__letter p {
   width: 80%;
   font-size: .9em; 
 }
-.section4__newsLetter{
+.section4__newsLetter__text{
   position: absolute;
   top: 30%;
   height: 325px; 
@@ -400,7 +401,7 @@ p {
   padding: 40px 10px 60px 40px;    
   outline: 1px solid #EBD398;  
 }
-.section4__email{
+.section4__newsLetter__email{
   margin-top: 20px;
   padding: 10px 40px 10px 10px;
 }
