@@ -81,7 +81,7 @@ ul {
   top: 27%;
   left: 10px;
   margin: 0 5%;
-  height: 430px;    
+  height: 400px;    
   display: flex;
   border-radius: 120px 0 0 0;
   outline: 1px solid #EBD398;
@@ -227,7 +227,7 @@ p {
   right: 25%;
 }
 .section2__cupcake__torta{
-  transform: scale(0.7) translate(-175px, -140px);
+  transform: scale(0.7) translate(-65px, -140px);
 }
 .Exquisite__hapiness__linea2{
   position: absolute;
@@ -246,7 +246,7 @@ p {
   bottom: 650px;
 }
 .title__img--style{
-  margin: 0 25px;
+  margin: 0 15px;
   top: -115px;
   border-radius: 60px 0 60px 0px;
 }
@@ -255,14 +255,15 @@ p {
 }
 .Our--products--div--title{  
   right: 10%;  
-  margin: 5% 8%;
+  margin: 10% 8%;
+  margin-bottom: 50px;
   margin-left: 12%;
   border-radius: 60px 0 60px 0;
   outline: 1px solid #EBD398;
   padding: 80px 50px 100px;
 }
 .Our--products--titleDetails{
-  margin-left: 38%; 
+  margin-left: 42%; 
 }
 /*.Our--products--Products--div2{
   margin: 0 35%;
@@ -377,36 +378,36 @@ p {
 
 
 
-.section4__news__letter {  
-  margin-top: -590px;
+.news__letter__section4 {  
+  margin-top: -650px;
 }
-.section4__news__letter img{
+.news__letter__section4 img{
   width: 100%;  
 }
-.section4__news__letter h1 {
+.news__letter__section4 h1 {
   font-size: 1.8em;  
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   color: #FFF;
   width: 80%;
 }
-.section4__news__letter h2 {
+.news__letter__section4 h2 {
   width: 100%;
 }
-.section4__news__letter p {
+.news__letter__section4 p {
   width: 80%;
   font-size: .9em; 
 }
-.section4__newsLetter__text{
+.newsLetter__text{
   position: absolute;
   top: 30%;
   height: 325px; 
   width: 30%;   
   margin: 0 35%;
-  padding: 40px 10px 60px 40px;    
+  padding: 20px 30px;  
   outline: 1px solid #EBD398;  
 }
-.section4__newsLetter__email{
+.newsLetter__email{
   margin-top: 20px;
   padding: 10px 40px 10px 10px;
 }

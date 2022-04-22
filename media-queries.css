@@ -3,7 +3,7 @@
       font-size: 0.8em;
     }
     h1{
-      font-size: 2.8em;
+      font-size: 2.7em;
     }
     /*HEADER START*/
   .nav__logo{
@@ -12,43 +12,43 @@
   }
     /*HEADER END*/
   /*BANNER START*/
-    .fondo__degrade {
-      top: 30%;
-      height: 300px; 
+  .fondo__degrade {
+      top: 32%;
+      height: 250px; 
       padding-top: 25px; 
       border-radius: 100px 0 0 0;     
     }  
    .fondo__degrade p{
-      width: 50%;
+      width: 45%;
     }
-    .cuadrito{
+    .next__event__square{
       position: absolute;
-      right: 8%;
-      bottom: -15%;
+      right: 6%;
+      bottom: -22%;
       transform: scale(0.7);
     }
   /*BANNER END*/
   /*SECTION 1 START*/
-  .texto__about__us {
+  .about__us__text {
     top: 26.5%;
     left: 5%;
   }
-  .about__us p {
+  .about__us__section1 p {
     margin-left: 40%;
-    width: 45%;
+    width: 49%;
   }
   /*SECTION 1 END*/
   /*SECTION 2 START*/
-  .section2{
+  .Exquisite__hapiness__section2{
     bottom: 40px;
   }
-  .section2 p{
+  .Exquisite__hapiness__section2 p{
     width: 47%;
   }
-  .section2__img{
+  .Exquisite__hapiness__background{
     width: 100%;
   }
-  .section2__linea1{
+  .Exquisite__hapiness__linea1{
     position: absolute;
     width: 150px;
     height: 199.02px;
@@ -57,7 +57,7 @@
     top: 34% !important;
     right: 20%;
   }
-  .section2__linea2{
+  .Exquisite__hapiness__linea2{
     position: absolute;
     width: 150px;
     height: 199.02px;
@@ -66,16 +66,16 @@
     top: 15% !important;
     right: 6%;
   }
-  .cupcake__torta{
+  .section2__cupcake__torta{
     transform: scale(0.55) translate(-200px, -260px);
   }
     /*SECTION 2 END*/
   
     /*SECTION 3 START*/
-  .section3{
+  .Our__products__section3{
     bottom: 360px;
   }
-  .section3--div{  
+  .Our--products--div--title{  
     right: 10%;  
     margin: 8% 5%;
     margin-left: 12%;
@@ -83,19 +83,21 @@
     outline: 1px solid #EBD398;
     padding: 60px 40px 60px;
   }  
-  .estilo--img{
+  .title__img--style{
     top: -150px;
-    left: -10%;
+    left: -15%;
     border-radius: 60px 0 60px 0px;
   }
-  .section3__pastel{
-    transform: scale(0.5);
+  .Our__products__title__Img{
+    transform: scale(0.45);
   }
     /*SECTION 3 END*/
   /*GALLERY START*/
-  .section3__galery{
-      grid-template-columns: repeat(2, 1fr);
-  }
+  .Our__products__gallery-container{
+    grid-gap: 30px;
+    grid-auto-rows: 260px;
+    padding: 5% 15%;
+  }/*
   .galery__item:nth-child(1){
       display: none;
   }
@@ -116,23 +118,39 @@
   }
   /*GALLERY END*/  
     /*SECTION 4 START*/
-  
-  .section4 h1 {
+ 
+  .news__letter__section4 h1 {
      font-size: 1.4em  !important;
-  }
-  .section4__newsLetter {
+  } 
+
+  .news__letter__section4 p {
+    width: 95%;
+ } 
+ .email__button{
+   margin-top: 10px;
+ }
+  .news__letter__section4 {
     position: absolute;
-    top: 20%;
     height: 300px;
-    width: 40%;
-    margin: 0 30%;
-    padding: 30px 20px 30px 20px;
-    outline: 1px solid #EBD398;
+    width: 100%;
+    bottom: -120%; 
+   
   }
+  .newsLetter__text{
+    position: absolute;
+    
+    height: 280px; 
+    width: 35%;   
+    margin: 0 35%;
+    padding: 20px 30px;  
+   
+  }
+  
     /*SECTION 4 END*/
   }
-  @media (max-width:1180px){
-.section2__img{
+
+ @media (max-width:1180px){
+.Exquisite__hapiness__background{
     width: 100%;
 }
   }
