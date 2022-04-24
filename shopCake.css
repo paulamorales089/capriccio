@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #150b01;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  h2 {
+    font-size: .9em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #EBD398;
+  }
+  h1 {
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFF;
+  }
+  p {
+    padding-top: 15px;
+    width: 40%;
+    font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #FFF;
+  }
+  .flex {
+    display: flex;   
+  }
+  /*clase utilitaria para acomodar horizontalmente todo en el centro*/
+  .aling-items-center {
+    align-items: center;
+  }
+  /*acomodacion de todo el menu*/
+  .nav {
+    z-index: 2;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+  }
+  /*estilo de los nav del menu*/
+  .nav a {
+    text-decoration: none;
+    font-size: .9em;
+    font-family: 'Playfair Display', serif;
+    color: #dfdfdf;
+  }
+  .nav__logo {
+    padding-top: 50px;
+  }
+  /*margen entre cada uno de los elementos del menu*/
+  .menu__item {
+    margin: 0 10px;
+    padding: 5px 5px;
+  }
+   .menu__icon{
+    margin: 0 10px;
+    padding: 5px -5px;
+  }
+  /*sombreado elementos menu*/
+  .menu__item:hover{
+    background-color: #dfdfdf1a;
+    outline: 1px solid #EBD398;
+    border-radius: 20px;  
+  }
+  .menu__item:hover a{
+    color: #DF9146;
+  }
+  /*cambiar tamaño image ICONOS*/
+  .menu__icon img {
+    height: 20px;   
+  }
+  
+  .banner__img {
+    object-fit: cover;
+    top: 20%;
+  }
+  .fondo__degrade {
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 88%;
+    top: 27%;
+    left: 10px;
+    margin: 0 5%;
+    height: 330px;    
+    display: flex;
+    outline: 1px solid #EBD398;
+    background: linear-gradient(90deg, rgba(21,11,1,1) 10%, rgba(21,11,1,0.8743872549019608) 45%, rgba(21,11,1,0.16010154061624648) 100%);
+  }

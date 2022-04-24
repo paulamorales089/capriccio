@@ -20,7 +20,26 @@ button {
 ul {
   list-style: none;
 }
-
+h2 {
+  font-size: .9em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #EBD398;
+}
+h1 {
+  font-size: 3em;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  color: #FFF;
+}
+p {
+  padding-top: 15px;
+  width: 40%;
+  font-size: 0.9em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #FFF;
+}
 .flex {
   display: flex;   
 }
@@ -38,7 +57,7 @@ ul {
 /*estilo de los nav del menu*/
 .nav a {
   text-decoration: none;
-  font-size: 1em;
+  font-size: .9em;
   font-family: 'Playfair Display', serif;
   color: #dfdfdf;
 }
@@ -47,8 +66,8 @@ ul {
 }
 /*margen entre cada uno de los elementos del menu*/
 .menu__item {
-  margin: 0 10px;
-  padding: 5px 10px;
+  margin: 0 15px;
+  padding: 5px 5px;
 }
  .menu__icon{
   margin: 0 10px;
@@ -87,26 +106,7 @@ ul {
   outline: 1px solid #EBD398;
   background: linear-gradient(90deg, rgba(21,11,1,1) 10%, rgba(21,11,1,0.8743872549019608) 45%, rgba(21,11,1,0.16010154061624648) 100%);
 }
-h2 {
-  font-size: .9em;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  color: #EBD398;
-}
-h1 {
-  font-size: 3em;
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  color: #FFF;
-}
-p {
-  padding-top: 15px;
-  width: 40%;
-  font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #FFF;
-}
+
 .position--relative {
   position: relative;
 }
