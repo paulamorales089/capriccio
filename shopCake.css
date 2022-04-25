@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
   body {
     background-color: #150b01;
   }
@@ -21,7 +20,7 @@
   }
   
   h2 {
-    font-size: .9em;
+    font-size: .8em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #EBD398;
@@ -34,74 +33,138 @@
   }
   p {
     padding-top: 15px;
-    width: 40%;
+    width: 60%;
     font-size: 0.9em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #FFF;
   }
-  .flex {
+.flex {
     display: flex;   
-  }
-  /*clase utilitaria para acomodar horizontalmente todo en el centro*/
-  .aling-items-center {
-    align-items: center;
-  }
-  /*acomodacion de todo el menu*/
-  .nav {
-    z-index: 2;
-    justify-content: space-around;
-    position: absolute;
-    width: 100%;
-  }
-  /*estilo de los nav del menu*/
-  .nav a {
-    text-decoration: none;
-    font-size: .9em;
-    font-family: 'Playfair Display', serif;
-    color: #dfdfdf;
-  }
-  .nav__logo {
-    padding-top: 50px;
-  }
-  /*margen entre cada uno de los elementos del menu*/
-  .menu__item {
-    margin: 0 10px;
-    padding: 5px 5px;
-  }
-   .menu__icon{
-    margin: 0 10px;
-    padding: 5px -5px;
-  }
-  /*sombreado elementos menu*/
-  .menu__item:hover{
-    background-color: #dfdfdf1a;
-    outline: 1px solid #EBD398;
-    border-radius: 20px;  
-  }
-  .menu__item:hover a{
-    color: #DF9146;
-  }
-  /*cambiar tamaño image ICONOS*/
-  .menu__icon img {
-    height: 20px;   
-  }
-  
-  .banner__img {
-    object-fit: cover;
-    top: 20%;
-  }
-  .fondo__degrade {
-    /*display: flex;*/
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    width: 88%;
-    top: 27%;
-    left: 10px;
-    margin: 0 5%;
-    height: 330px;    
-    display: flex;
-    outline: 1px solid #EBD398;
-    background: linear-gradient(90deg, rgba(21,11,1,1) 10%, rgba(21,11,1,0.8743872549019608) 45%, rgba(21,11,1,0.16010154061624648) 100%);
-  }
+}
+/*clase utilitaria para acomodar horizontalmente todo en el centro*/
+.aling-items-center {
+  align-items: center;
+}
+  /*clase utilitaria*/
+.position--relative {
+  position: relative;
+}
+/*clase utilitaria*/
+.position--absolute {
+  position: absolute;  
+}
+/*acomodacion de todo el menu*/
+.nav {
+  z-index: 2;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+}
+/*estilo de los nav del menu*/
+.nav a {
+  text-decoration: none;
+  font-size: .9em;
+  font-family: 'Playfair Display', serif;
+  color: #dfdfdf;
+}
+.nav__logo {
+  padding-top: 50px;
+}
+/*margen entre cada uno de los elementos del menu*/
+.menu__item {
+  margin: 0 10px;
+  padding: 5px 5px;
+}
+.menu__icon{
+  margin: 0 10px;
+  padding: 5px -5px;
+}
+/*sombreado elementos menu*/
+.menu__item:hover{
+  background-color: #dfdfdf1a;
+  outline: 1px solid #EBD398;
+  border-radius: 20px;  
+}
+.menu__item:hover a{
+  color: #DF9146;
+}
+/*cambiar tamaño image ICONOS*/
+.menu__icon img {
+  height: 20px;   
+}
+
+/*BANNER*/
+.banner__img {
+  object-fit: cover;
+  top: 20%;
+}
+.fondo__degrade {
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 55%;
+  top: 165px;
+  left: 10px;
+  margin: 0 5%;
+  height: 320px;    
+  display: flex;
+  outline: 1px solid #EBD398;
+ /* background: linear-gradient(90deg, rgba(21,11,1,1) 10%, rgba(21,11,1,0.8743872549019608) 45%, rgba(21,11,1,0.16010154061624648) 100%);*/
+}
+.text--details{
+  margin-left: 10%;
+}
+/*SQUARE*/
+.next__event__square{
+  position: absolute;
+  right: 12%;
+  bottom: 2px;
+}
+.absolute--square {
+  position: absolute;
+  right: 15%;
+  bottom: 30%;
+}
+.absolute--square h4{
+  text-align: right;
+  width: 80%;
+  padding-bottom: 25px;
+  margin-left: 20%;
+  font-size: 1.4em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #3a3e49;
+}
+.absolute--square a{
+  text-align: right;
+  margin-left: 56%;
+  margin-top: 85px;
+  padding: 10px 15px;
+  outline: 2px solid #5F2D12;
+  color: #5F2D12;
+
+  text-decoration: none;
+  font-size: .75em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+
+.specialties__text{
+  top: 5%;
+}
+.specialties__section1 h1{
+  width: 60%;
+}
+.specialties__section1 p{
+  top: 0px;
+  width: 30%;
+  margin-left: 600px;
+}
+.specialties__background{
+  opacity: 60%;
+  width: 100%;
+}
