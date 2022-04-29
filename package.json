@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "firebase": "^9.7.0"
+  },
+  "name": "capriccioydelizia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./login.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulamorales089/capriccio.git"
+  },
+  "author": "paula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulamorales089/capriccio/issues"
+  },
+  "homepage": "https://github.com/paulamorales089/capriccio#readme",
+  "description": ""
+}
