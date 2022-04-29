@@ -172,27 +172,46 @@
   outline: 1px solid #EBD398;
   
 }
-
-
 .specialties__background{
   opacity: 60%;
+  width: 100%;
+}
+
+.cake_gallery_container{
+  bottom: 1250px;
+}
+.cake_gallery_container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 350px;
+  padding: 12%;  
+}
+.specialties__section1 a{  
+  padding: 10px 15px;
+  outline: 2px solid #EBD398;
+  color:#EBD398;
+  text-decoration: none;
+  font-size: .75em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.specialties__seeMore__btn{
+  bottom: 310px;
+  text-align: center;
+  justify-content: center;
   width: 100%;
 }
 
 
 
 
-
-
-
-
-
 .footer {
+  background-color: #150b01;
   display: flex;
   flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
   color: #2f2f2f;
-  margin-top: 30px;
+  margin-top: -95%;
 }
 
 .footer > * {
