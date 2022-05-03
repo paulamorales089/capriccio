@@ -73,7 +73,7 @@ p {
   color: #dfdfdf;
 }
 .nav__logo {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 /*margen entre cada uno de los elementos del menu*/
 .menu__item {
@@ -111,7 +111,7 @@ p {
   justify-content: center;
   position: absolute;
   width: 88%;
-  top: 165px;
+  top: 160px;
   left: 10px;
   margin: 0 5%;
   height: 380px;    

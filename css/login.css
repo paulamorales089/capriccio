@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-* {
+* {                         
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -73,7 +73,7 @@ p {
   color: #dfdfdf;
 }
 .nav__logo {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 /*margen entre cada uno de los elementos del menu*/
 .menu__item {
@@ -96,4 +96,27 @@ p {
 /*cambiar tamaño image ICONOS*/
 .menu__icon img {
   height: 20px;   
+}
+
+
+
+ /*BANNER*/
+ .banner__img {
+  opacity: 60%;
+  object-fit: cover;
+  top: 20%;
+}
+.fondo__degrade {
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 88%;
+  top: 160px;
+  left: 10px;
+  margin: 0 5%;
+  height: 380px;    
+  display: flex;
+  border-radius: 20px;
+  outline: 1px solid #EBD398;  
 }
