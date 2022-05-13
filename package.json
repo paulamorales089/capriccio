@@ -21,7 +21,8 @@
     "npm-lifecycle": "^3.1.5"
   },
   "devDependencies": {
-    "parcel": "^2.5.0"
+    "parcel": "^2.5.0",
+    "process": "^0.11.10"
   },
   "description": ""
 }

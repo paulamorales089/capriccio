@@ -1,11 +1,12 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-import { createUser, login } from "./src/scripts/auth";
-
+//IMPORT CREAT USER AND LOGIN 
+import { createUser, login, addUserToDatabase } from "./src/scripts/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -17,27 +18,41 @@ const firebaseConfig = {
   appId: "1:63313256749:web:232fca19fbe975b615b3a4"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth();
-
   const createUserForm = document.getElementById("createUserForm");
   const loginForm = document.getElementById("loginForm");
 
-  //CREAR USUARIO SUBMIT
-  createUserForm.addEventListener("submit", e => {
-    e.preventDefault();
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const db = getFirestore(app);
 
+  
+
+  //CREAR USUARIO SUBMIT
+  createUserForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
     // aqui entro al elemento y obtengo su contenido
     const name = createUserForm.name.value;
-    const lastname = createUserForm.lastname.value;
+    const lastName = createUserForm.lastName.value;
     const email = createUserForm.email.value;
     const password = createUserForm.password.value;
 
-    createUser(name, lastname, email, password);
+    const newUser = {
+      name, 
+      lastName,
+      email,
+      password,
+      isAdmin: false,
+    };
 
+    const userCreated = await createUser(auth, newUser);
+    await addUserToDatabase(db, userCreated.uid, newUser);
+    console.log(userCreated);    
+
+    alert(`Wellcome, ${name}`);
   });
 
+  
   //CREAR LOGIN SUBMIT
   loginForm.addEventListener("submit", e => {
     e.preventDefault();
@@ -45,9 +60,15 @@ const auth = getAuth();
     const email = loginForm.email.value;
     const password = loginForm.password.value;
 
-    login(email, password);
-    //console.log("LOGIN!");
+    login(auth, email, password);
 
+    //RECUPERAR INFROMACION ADICIONAL DEL USUARIO
+    if (user.isAdmin){
+      location.href-"./createProduct.html";
+    }else{
+      location.href="./products.html";
+    }
+    
   });
 
 
