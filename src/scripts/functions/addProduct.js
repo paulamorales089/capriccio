@@ -24,11 +24,11 @@ async function upLoadImages (storage, images = [] ){
     const upLoadedImages = images.map(async (image) => {
 
         const imageReference = await imageUpLoadReference(storage, image);
-console.log(imageReference);
-        const url = getDownloadURL(ref(storage, imageReference.ref.fullPath));
+        // console.log(imageReference);
+        return getDownloadURL(ref(storage, imageReference.ref.fullPath));
 
     });
-    console.log(upLoadedImages);
+    return upLoadedImages;
 
 }
 

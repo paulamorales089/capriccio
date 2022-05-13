@@ -26,10 +26,14 @@ createProductForm.addEventListener("submit", async (e) => {
     const category = createProductForm.category.value;
     const images = createProductForm.images.files;
 
+    let gallery = []
+
     if (images.length) {
         //VAMOS A SUBIR LAS IMAGENES A FIRESTORE
         const upLoadedImages = await upLoadImages(storage, [...images]);   
         
+        gallery = await Promise.all(upLoadedImages); 
+
     }
 
 
@@ -38,7 +42,7 @@ createProductForm.addEventListener("submit", async (e) => {
         description,
         price,
         category,
-        // images
+        images: gallery,
     }; 
     
     await addProduct(db, newProduct);
