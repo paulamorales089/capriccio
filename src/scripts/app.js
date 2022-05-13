@@ -2,21 +2,15 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getStorage } from "firebase/storage";
+
+
 
 //IMPORT CREAT USER AND LOGIN 
-import { createUser, login, addUserToDatabase } from "./src/scripts/auth";
+import { createUser, login, addUserToDatabase } from "./functions/auth";
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDyq5I-p-HFzoYTJGaTK9Pp0DuPE9E73DU",
-  authDomain: "cappricioydelizia.firebaseapp.com",
-  projectId: "cappricioydelizia",
-  storageBucket: "cappricioydelizia.appspot.com",
-  messagingSenderId: "63313256749",
-  appId: "1:63313256749:web:232fca19fbe975b615b3a4"
-};
+import firebaseConfig from "../utils/firebase";
+
 
   const createUserForm = document.getElementById("createUserForm");
   const loginForm = document.getElementById("loginForm");
@@ -25,6 +19,7 @@ const firebaseConfig = {
     const app = initializeApp(firebaseConfig);
     const auth = getAuth();
     const db = getFirestore(app);
+    const storage = getStorage(app);
 
   
 
