@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../css/shopCake.css">
+    <link rel="stylesheet" href="./css/shopCake.css">
+
 </head>
 <body>
     
-    <header>        
+   <header>        
         <nav class="nav flex">
             <div class="flex aling-items-center">
             <ul class="menu flex aling-items-center ">
@@ -30,7 +31,7 @@
 
             <div class="nav__logo flex aling-items-center " >
                 <a href="#">
-                    <img src="../images/logo.png" alt="CyD">
+                    <img src="./images/logo.png" alt="CyD">
                 </a>
             </div>
 
@@ -49,20 +50,20 @@
             <ul class="nav__icon flex aling-items-center">
                 <li class="menu__icon">
                     <button>
-                        <img src="../images/icosn_header/search_Icon.png" alt="icono buscar">             
+                        <img src="./images/icosn_header/search_Icon.png" alt="icono buscar">             
                     </button>                   
                 </li>
 
                 <li class="menu__icon">
                     <a href="">
-                        <img src="../images/icosn_header/profiel_icon.png" alt="icono corazon">               
+                        <img src="./images/icosn_header/profiel_icon.png" alt="icono corazon">               
                     </a>
 
                 </li>
 
                 <li class="menu__icon">
                     <a href="">
-                        <img src="../images/icosn_header/shop_Icon.png" alt="icono carrito de compras">               
+                        <img src="./images/icosn_header/shop_Icon.png" alt="icono carrito de compras">               
                     </a>
                 </li>
             </ul>
@@ -73,7 +74,7 @@
     </header>
 
     <section class="banner position--relative">
-        <img class="banner__img position--relative" src="../images/shopCake_banner.png" alt="img header" width="100%">
+        <img class="banner__img position--relative" src="./images/shopCake_banner.png" alt="img header" width="100%">
     
         <div class="fondo__degrade">
             <h2 class="text--details estilo--h3 ">OUR PRODUCTS</h2>    
@@ -84,7 +85,7 @@
         </div>
     
         <div class="next__event__square">
-            <img src="../images/fondo_evento.png" alt="cuadro con textura" width="290px">
+            <img src="./images/fondo_evento.png" alt="cuadro con textura" width="290px">
             <div class="absolute--square">
                 <h4>Plan your next event with us</h4>
                 <a href="#">LEARN MORE</a>
@@ -95,7 +96,7 @@
 
     <section class="specialties__section1 position--relative">
 
-        <img class="specialties__background" src="../images/body/fondo_body2.png" alt="textura body">
+        <img class="specialties__background" src="./images/body/fondo_body2.png" alt="textura body">
 
        
           <div class="specialties__title position--absolute text--details" >
@@ -107,46 +108,87 @@
               <p>Discover a delicious combination of textures and flavors. We roast only the best hazelnuts, bathe them in smooth chocolate cream and wrap them in a crispy wafer and hazelnut pieces.</p>
           </div>
 
-          <div class="specialties__seeMore__btn flex position--relative">
+          <!-- <div class="specialties__seeMore__btn flex position--relative">
             <a href="#">SEE MORE</a>
-        </div>
+        </div> -->
     
     </section>
 
-    <div class="cake_gallery_container position--relative">
+    <label for="category">ORDER BY CATEGORY</label>
+    <select name="category" id="category">
+      <option value="">All</option>
+      <option value="brownies">Brownies</option>
+      <option value="cake">Cake</option>
+      <option value="cupcakes">Cupcakes</option>
+      <option value="desserts">Desserts</option>
+      <option value="breakfats">Breakfats</option>
+      <option value="customGift">Custom gifts</option>
+    </select>
+
+    <label for="order">ORDER BY PRICE</label>
+    <select name="order" id="order">
+      <option value="">None</option>
+      <option value="up">Price: highest to lowest</option>
+      <option value="down">Price: Lowest to highest</option>        
+    </select>
+
+    
+
+    <section class="products flex" id= "products">
+      <!--<div class="cake_gallery_container position--relative">
       <div class="gallery__item">
-        <img src="../images/cake_product/cake1.png" alt="" class="gallery__img">
+        <img src="./images/cake_product/cake1.png" alt="" class="gallery__img">
         <h2 class="gallery__img_name">cake 1</h2>
+        <h2 class="gallery__img_price">$60000</h2>
+        <button class="gallery__img_button">Add to car</button>
       </div>
       <div class="gallery__item">
-        <img src="../images/cake_product/cake2.png" alt="" class="gallery__img">
+        <img src="./images/cake_product/cake2.png" alt="" class="gallery__img">
         <h2 class="gallery__img_name">cake 2</h2>
+        <h2 class="gallery__img_price">$60000</h2>
+        <button class="gallery__img_button">Add to car</button>
       </div>  
       <div class="gallery__item">
-        <img src="../images/cake_product/cake3.png" alt="" class="gallery__img">
+        <img src="./images/cake_product/cake3.png" alt="" class="gallery__img">
         <h2 class="gallery__img_name">cake 3</h2>
+        <h2 class="gallery__img_price">$60000</h2> 
+        <button class="gallery__img_button">Add to car</button>       
       </div>
       <div class="gallery__item">
-        <img src="../images/cake_product/cake4.png" alt="" class="gallery__img">
+        <img src="./images/cake_product/cake4.png" alt="" class="gallery__img">
         <h2 class="gallery__img_name">cake 4</h2>
+        <h2 class="gallery__img_price">$60000</h2>
+        <button class="gallery__img_button">Add to car</button>
       </div>
       <div class="gallery__item">
-        <img src="../images/cake_product/cake5.png" alt="" class="gallery__img">
+        <img src="./images/cake_product/cake5.png" alt="" class="gallery__img">
         <h2 class="gallery__img_name">cake 5</h2>
+        <h2 class="gallery__img_price">$60000</h2>
+        <button class="gallery__img_button">Add to car</button>
       </div>
       <div class="gallery__item">
-        <img src="../images/cake_product/cake6.png" alt="" class="gallery__img">
+        <img src="./images/cake_product/cake6.png" alt="" class="gallery__img">
         <h2 class="gallery__img_name">cake 6</h2>
+        <h2 class="gallery__img_price">$60000</h2>
+        <button class="gallery__img_button">Add to car</button>
       </div>
       <div class="gallery__item">
-        <img src="../images/cake_product/cake7.png" alt="" class="gallery__img">
+        <img src="./images/cake_product/cake7.png" alt="" class="gallery__img">
         <h2 class="gallery__img_name">cake 7</h2>
+        <h2 class="gallery__img_price">$60000</h2>
+        <button class="gallery__img_button">Add to car</button>
       </div>
       <div class="gallery__item">
-        <img src="../images/cake_product/cake8.png" alt="" class="gallery__img">
+        <img src="./images/cake_product/cake8.png" alt="" class="gallery__img">
         <h2 class="gallery__img_name">cake 8</h2>
+        <h2 class="gallery__img_price">$60000</h2>
+        <button class="gallery__img_button">Add to car</button>
       </div>
-    </div>
+    </div> -->   
+  
+    <div class="loader position--absolute"></div>
+  
+  </section>
 
     
 
@@ -237,6 +279,7 @@
         </div>
       </footer>
 
+      <script src="./src/scripts/shop.js" type="module"></script>
 
 </body>
 </html>

@@ -1,24 +1,11 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getStorage } from "firebase/storage";
-
-// IMPORT MY THINGS
-import firebaseConfig from "../utils/firebase";
+import { storage, db  } from "./app";
 import { addProduct, upLoadImages } from "./functions/addProduct";
-
-
- // Initialize Firebase
- const app = initializeApp(firebaseConfig);
- const db = getFirestore(app);
- const storage = getStorage(app);
-
 
 const createProductForm = document.getElementById("createProductForm");
 
 createProductForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    console.log("createProductForm");
+    console.log("create Product Form :)");
 
     const name = createProductForm.name.value;
     const description = createProductForm.description.value;
