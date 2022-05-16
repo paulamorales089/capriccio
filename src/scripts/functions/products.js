@@ -7,7 +7,7 @@ async function getProducts (db) {
      const { docs } = await getDocs(collectionRef);
 
      const products = docs.map((doc)=> {
-        console.log(doc) ;
+        // console.log(doc) ;
         return {
               ...doc.data(),
               id: doc.id,

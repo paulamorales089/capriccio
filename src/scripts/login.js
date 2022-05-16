@@ -2,6 +2,7 @@
 //IMPORT CREAT USER AND LOGIN 
 import { db, auth} from "./app";
 import { createUser, login, addUserToDatabase } from "./functions/auth";
+import { createFirebaseCart } from "./functions/cart";
 
 
 
@@ -33,6 +34,7 @@ import { createUser, login, addUserToDatabase } from "./functions/auth";
     const userCreated = await createUser(auth, newUser);
     await addUserToDatabase(db, userCreated.uid, newUser);
     console.log(userCreated);    
+    await createFirebaseCart (db, userCreated.uid, [{name: "prove"}]);
 
     alert(`Wellcome, ${name}`);
   });
