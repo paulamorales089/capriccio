@@ -34,18 +34,22 @@ function renderProduct(item) {
 
     const isProductAddedToCart = cart.some((productCart) => productCart.id === item.id);
 
-    const productButtonCart = isProductAddedToCart ? `<button id="gallery__img_button" disabled>Product added</button>`: `<button id="gallery__img_button">Add to car</button>`;
+    const productButtonCart = isProductAddedToCart ? `<button id="gallery__img_button" disabled>Added to car</button>`:
+    `<button id="gallery__img_button">Add to car</button>`;
 
-    product.innerHTML = `<div class="gallery__item">
+    product.innerHTML = `
+    <div class="gallery__item">
     <img src="${coverImage}" alt="" class="gallery__img">
     <h2 class="gallery__img_name">${item.name}</h2>
     <h2 class="gallery__img_price">$${currencyFormat(item.price)}</h2>
   </div>`;
 
+  productSection.appendChild(product);
+
   const button = document.createElement("div");
   button.innerHTML= `${productButtonCart}`
 
-  productSection.appendChild(product);
+  
   productSection.appendChild(button);
 
   const productCartButton = document.getElementById("gallery__img_button");
@@ -63,7 +67,7 @@ function renderProduct(item) {
     }
 
     productCartButton.setAttribute("disabled", true);
-    productCartButton.innerText = "Product added :)";
+    productCartButton.innerText = "Added to car";
 
   });
 }

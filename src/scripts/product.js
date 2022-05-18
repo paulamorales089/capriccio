@@ -36,7 +36,7 @@ function renderProduct(product) {
 
     const isProductAddedToCart = cart.some((productCart) => productCart.id === product.id);
 
-    const productButtonCart = isProductAddedToCart ? `<button id="gallery__img_button" disabled>Product added</button>`: `<button id="gallery__img_button">Add to car</button>`;
+    const productButtonCart = isProductAddedToCart ? `<button id="gallery__img_button" class="product__cart" disabled>Added to car</button>`: `<button id="gallery__img_button" class="product__cart">Add to car</button>`;
 
 
     productInfoSection.innerHTML = `
