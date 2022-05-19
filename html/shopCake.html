@@ -30,7 +30,7 @@
         </div>
 
             <div class="nav__logo flex aling-items-center " >
-                <a href="#">
+                <a href="./index.html">
                     <img src="../images/logo.png" alt="CyD">
                 </a>
             </div>
@@ -77,8 +77,8 @@
         <img class="banner__img position--relative" src="../images/shopCake_banner.png" alt="img header" width="100%">
     
         <div class="fondo__degrade">
-            <h2 class="text--details estilo--h3 ">OUR PRODUCTS</h2>    
-            <h1 class="text--details">Chocolate Cakes</h1>    
+            <h2 class="text--details estilo--h3 ">BROWSE</h2>    
+            <h1 class="text--details">All Chocolate Products</h1>    
             <p class="text--details parrafo">We star in the tropics in search of the most refine cocoa. Then we look for the best creams, hazelnuts with the greatest taste and other ingridients.                  
             </p>
     
@@ -94,17 +94,18 @@
 
     </section>
 
-    <section class="specialties__section1 position--relative">
+  
 
-        <img class="specialties__background" src="../images/body/fondo_body2.png" alt="textura body">
+    <section class="specialties__section1 flex">
 
-       
-          <div class="specialties__title position--absolute text--details" >
+        <img class="specialties__background position--absolute" src="../images/body/fondo_body2.png" alt="textura body">
+      
+          <div class="specialties__title  text--details" >
           <h2 class="">THE</h2>
           <h1 class="">Capriccio & Delizia specialties</h1> 
           </div>    
 
-          <div class="specialties__description position--absolute">
+          <div class="specialties__description">
               <p>Discover a delicious combination of textures and flavors. We roast only the best hazelnuts, bathe them in smooth chocolate cream and wrap them in a crispy wafer and hazelnut pieces.</p>
           </div>
 
@@ -114,8 +115,10 @@
     
     </section>
 
-    <label for="category">ORDER BY CATEGORY</label>
-    <select name="category" id="category">
+    <section class="filters position--relative flex">
+       <div class="filter">
+       <label for="category" class="filter__label">ORDER BY CATEGORY</label>
+    <select class="filter__select" name="category" id="category">
       <option value="">All</option>
       <option value="brownies">Brownies</option>
       <option value="cake">Cake</option>
@@ -124,17 +127,23 @@
       <option value="breakfats">Breakfats</option>
       <option value="customGift">Custom gifts</option>
     </select>
+  </div>
 
-    <label for="order">ORDER BY PRICE</label>
+    <div class="filter">
+     <label for="order" class="filter__label">ORDER BY PRICE</label>
     <select name="order" id="order">
       <option value="">None</option>
-      <option value="up">Price: highest to lowest</option>
-      <option value="down">Price: Lowest to highest</option>        
+      <option value="up">Highest to lowest</option>
+      <option value="down">Lowest to highest</option>        
     </select>
+  </div>
+    </section>
+   
+     
 
     
-
-    <section class="products flex" id= "products">
+   
+    <section class="products position--relative" id= "products">
       <!--<div class="cake_gallery_container position--relative">
       <div class="gallery__item">
         <img src="../images/cake_product/cake1.png" alt="" class="gallery__img">
@@ -185,12 +194,9 @@
         <button class="gallery__img_button">Add to car</button>
       </div>
     </div> -->   
+      <div class="loader position--absolute"></div>
   
-    <div class="loader position--absolute"></div>
-  
-  </section>
-
-    
+  </section>    
 
     <footer class="footer">
         <div class="footer__addr">

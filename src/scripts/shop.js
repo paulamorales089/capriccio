@@ -34,15 +34,19 @@ function renderProduct(item) {
 
     const isProductAddedToCart = cart.some((productCart) => productCart.id === item.id);
 
-    const productButtonCart = isProductAddedToCart ? `<button id="gallery__img_button" disabled>Added to car</button>`:
-    `<button id="gallery__img_button">Add to car</button>`;
-
+    
     product.innerHTML = `
     <div class="gallery__item">
     <img src="${coverImage}" alt="" class="gallery__img">
     <h2 class="gallery__img_name">${item.name}</h2>
-    <h2 class="gallery__img_price">$${currencyFormat(item.price)}</h2>
-  </div>`;
+    <h2 class="gallery__img_price">${currencyFormat(item.price)}</h2>
+    <button class="gallery__img_button">Add to car</button>
+  </div>
+  `;
+    
+    const productButtonCart = isProductAddedToCart ? `<button id="gallery__img_button" disabled>Added to car</button>`:
+    `<button id="gallery__img_button">Add to car</button>`;
+
 
   productSection.appendChild(product);
 

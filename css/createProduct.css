@@ -97,3 +97,7 @@ p {
 .menu__icon img {
   height: 20px;   
 }
+
+.createProductForm textarea{
+  height: 150px;
+}

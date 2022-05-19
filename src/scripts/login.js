@@ -50,11 +50,11 @@ import { createFirebaseCart } from "./functions/cart";
     login(auth, email, password);
 
     //RECUPERAR INFROMACION ADICIONAL DEL USUARIO
-    if (user.isAdmin){
-      location.href-"./createProduct.html";
-    }else{
-      location.href="./products.html";
-    }
+    // if (user.isAdmin){
+    //   location.href="./createProduct.html";
+    // }else{
+    //   location.href="./products.html";
+    // }
     
   });
 
