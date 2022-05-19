@@ -77,79 +77,49 @@
 
         <div class="fondo__degrade">
           
-            <h2 class="estilo--h3">Log in</h2>
-
-            <form id="createUserForm">
-                <input type="text" placeholder="First Name" name="name">    
-                <input type="text" placeholder="Last Name" name="lastName">                    
-                <input type="email" placeholder="Email" name="email">        
-                <input type="password" placeholder="password" name="password">        
-                <input type="submit" value="Create user">
-            </form>
-
-            <br><br><br><br>
-
-            <form id="loginForm">             
-                <input type="email" placeholder="Email" name="email">        
-                <input type="password" placeholder="password" name="password">        
-                <input type="submit" value="Login">
-            </form>
-
+           
             
+            <form id="loginForm" class="loginForm  position--relative">  
+
+                <h1>Log in</h1>
+
+                <label for="email" class="logIn__label">Email</label>           
+                <input type="email" class="placeholder" placeholder="" name="email">    
+                
+                <label for="password" class="logIn__label">Password</label>
+                <input type="password" class="placeholder" placeholder="" name="password">  
+
+                <input type="submit" value="Login" class="logIn__submit">
+            </form>
+            
+            <br><br><br><br>            
+            
+            <form id="createUserForm">
+
+                <h1>Sign up</h1>
+
+                <label for="name" class="logIn__label">First Name</label>
+                <input type="text" class="placeholder" placeholder="" name="name">    
+
+                <label for="lastname" class="logIn__label">Last Name</label>
+                <input type="text" class="placeholder" placeholder="" name="lastName">    
+                
+                <label for="email" class="logIn__label">Email</label>
+                <input type="email" class="placeholder" placeholder="" name="email">   
+                
+                <label for="password" class="logIn__label">password</label>
+                <input type="password" class="placeholder"placeholder="" name="password">        
+
+                <input type="submit" class="logIn__submit" value="Create user">
+            </form>
+            
+            <button class="registration__registration " id="signupBtn">Don't have an account? Sign up here</button>
+            <button class="registration__registration registration__registration--hide" id="loginBtn">Already have an account? Login here</button>                
+
+
         </div>   
 
-  <!-- </section>    
-
-        <form id="loginForm">
-             
-            <input type="email" placeholder="Email" name="email">
-    
-            <input type="password" placeholder="password" name="password">
-    
-            <input type="submit" value="Login">
-        </form>
-
-   
-
-
-
-         <h2 class="registration__title">Register</h2>
-
-        Login inputs
-        <form action="" id="login" class="login">
-            <label for="email" class="registration__label">EMAIL</label>
-            <input type="email" name="email" placeholder="Email" id="email" class="registration__input">
-
-            <label for="password" class="registration__label">PASSWORD</label>
-            <input type="password" name="password" placeholder="Password" id="password" class="registration__input">
-
-            <input type="submit" value="LOGIN" class="registration__submit">
-        </form>-->
-
-         <!--Sign up inputs
-        <form action="" id="signup" class="signup">
-            <label for="name" class="registration__label">NAME</label>
-            <input type="text" name="name" placeholder="First name" id="name" class="registration__input">
-
-            <label for="lastname" class="registration__label">LAST NAME</label>
-            <input type="text" name="lastname" placeholder="Last name" id="lastname" class="registration__input">
-
-            <label for="email" class="registration__label">EMAIL</label>
-            <input type="email" name="email" placeholder="Email" id="email" class="registration__input">
-
-            <label for="cell" class="registration__label">CELLPHONE NUMBER</label>
-            <input type="text" name="cell" placeholder="Cellphone number" id="cell" class="registration__input">
-
-            <label for="password" class="registration__label">PASSWORD</label>
-            <input type="password" name="password" placeholder="Password" id="password" class="registration__input">
-
-            
-            <input type="submit" value="SIGN UP" class="registration__submit">
-        </form>
-
-        <button class="registration__registration" id="signupBtn">Don't have an account? Sign up here</button>
-        <button class="registration__registration registration__registration--hide" id="loginBtn">Already have an account? Login here</button>-->
-        
+  
     
         <script src="../src/scripts/login.js" type="module"></script>
 

@@ -13,8 +13,8 @@ body {
 }
 
 button {
-  background-color: transparent;
-  border: none;
+  /* background-color: transparent; */
+  /* border: none; */
 }
 
 ul {
@@ -54,6 +54,9 @@ p {
 /*clase utilitaria*/
 .position--absolute {
   position: absolute;  
+}
+.text--align{
+  text-align: center;
 }
 .text--details{
   margin-left: 10%;
@@ -119,6 +122,90 @@ p {
   height: 430px;    
   display: flex;
   border-radius: 20px;
-  outline: 1px solid #EBD398;  
+  outline: 1px solid #EBD398; 
+  
 }
 
+.loginForm{
+  top: 55px;
+  left: 8%;
+}
+.createUserForm{
+  top: 55px;
+  left: 8%;
+}
+.loginForm h1{
+  margin-bottom: 20px;
+  align-items: center;
+  font-size: 2em; 
+}
+.createUserForm h1{
+  margin-bottom: 20px;
+  align-items: center;
+  font-size: 2em; 
+}
+.logIn__label{
+  text-decoration: none;
+  font-size: .9em;
+  font-family: 'Playfair Display', serif;
+  color: #dfdfdf;
+}
+.placeholder{
+  display: block;
+  background-color: #DF9146;
+  opacity: 20%;
+  padding: 5px;
+  width: 25%;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 15px 0 15px 0;
+}
+.registration__registration {
+  display: block;
+  text-decoration: underline;
+  font-family: "Outfit", sans-serif;
+  font-weight: lighter;
+  color: #5C302F;
+  font-size: 1em;
+  margin: 15px 0;
+  background-color: transparent;
+  border: none;
+}
+.registration__registration--hide {
+  display: none;
+} 
+
+.logIn__submit{
+  font-size: .8em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #5F2D12;
+  background-color: #EBD398;
+  border-radius: 165px;
+  padding: 10px 40px;
+  width: 20%;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 28px;
+}
+.logIn__submit:hover {
+  background-color: #DF9146;
+} 
+
+.signup {
+  display: none;
+}
+
+.signup--show {
+  display: block;
+}
+
+.login {
+  display: block;
+}
+
+.login--hide {
+  display: none;
+} 
