@@ -6,11 +6,11 @@ import { createFirebaseCart } from "./functions/cart";
 
 
 
+  const loginForm = document.getElementById("loginForm");
+  const signupBtn = document.getElementById("signupBtn");
 
   const createUserForm = document.getElementById("createUserForm");
-  const loginForm = document.getElementById("loginForm");
-
-    
+  const loginBtn = document.getElementById("loginBtn");
 
   
 
@@ -38,6 +38,17 @@ import { createFirebaseCart } from "./functions/cart";
 
     alert(`Wellcome, ${name}`);
   });
+  
+    //Open login form
+  loginBtn.addEventListener("click", e =>{
+    //Hide sign up form and button
+    createUserForm.classList.remove('createUserForm--show');
+    loginBtn.classList.add('registration__registration--hide');
+
+    //Show login form and button
+    loginForm.classList.remove('loginForm--hide');
+    signupBtn.classList.remove('registration__registration--hide');
+  });
 
   
   //CREAR LOGIN SUBMIT
@@ -56,6 +67,17 @@ import { createFirebaseCart } from "./functions/cart";
     //   location.href="./products.html";
     // }
     
+  });
+
+    //Open sign up form
+  signupBtn.addEventListener("click", e =>{
+    //Hide login form and button
+    loginForm.classList.add('loginForm--hide');
+    signupBtn.classList.add('registration__registration--hide');
+
+    //Show sign up form and button
+    createUserForm.classList.add('createUserForm--show');
+    loginBtn.classList.remove('registration__registration--hide');
   });
 
 

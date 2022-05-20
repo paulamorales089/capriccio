@@ -75,11 +75,9 @@
     <section class="banner position--relative">
         <img class="banner__img position--relative" src="../images/body/fondo_body3.png" alt="img header" width="100%">
 
-        <div class="fondo__degrade">
-          
-           
+        <div class="fondo__degrade">          
             
-            <form id="loginForm" class="loginForm  position--relative">  
+            <form id="loginForm" class="loginForm">  
 
                 <h1>Log in</h1>
 
@@ -92,17 +90,25 @@
                 <input type="submit" value="Login" class="logIn__submit">
             </form>
             
-            <br><br><br><br>            
+            <!-- <br><br><br><br> -->
             
-            <form id="createUserForm">
+            <form id="createUserForm" class="createUserForm">
 
                 <h1>Sign up</h1>
 
-                <label for="name" class="logIn__label">First Name</label>
-                <input type="text" class="placeholder" placeholder="" name="name">    
+                <div class="signUp--detail flex flex--direction--row" >
+                    <div class="name__placeholders">
+                        <label for="name" class="logIn__label">First Name</label>
+                        <input type="text" class="placeholder placeholder--detail" placeholder="" name="name">  
+                    </div>
 
-                <label for="lastname" class="logIn__label">Last Name</label>
-                <input type="text" class="placeholder" placeholder="" name="lastName">    
+                    <div class="name__placeholders">
+                        <label for="lastname" class="logIn__label">Last Name</label>
+                        <input type="text" class="placeholder placeholder--detail" placeholder="" name="lastName">    
+                    </div>
+    
+                </div>
+
                 
                 <label for="email" class="logIn__label">Email</label>
                 <input type="email" class="placeholder" placeholder="" name="email">   
@@ -113,7 +119,7 @@
                 <input type="submit" class="logIn__submit" value="Create user">
             </form>
             
-            <button class="registration__registration " id="signupBtn">Don't have an account? Sign up here</button>
+            <button class="registration__registration" id="signupBtn">Don't have an account? Sign up here</button>
             <button class="registration__registration registration__registration--hide" id="loginBtn">Already have an account? Login here</button>                
 
 
